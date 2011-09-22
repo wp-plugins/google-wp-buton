@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Share Google +1 and Google Buzz button  widget
+Plugin Name: Share Google , twitter , facebook and social sharing
 Version: 0.1
 Description: Adds a set of social sharing widgets & icons after each post.
 Plugin URI: http://ns99.info/wp-plugins/sharing-social-icon-your-choice.html
