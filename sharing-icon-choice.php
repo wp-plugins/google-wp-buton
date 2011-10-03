@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Share Google , twitter , facebook and social sharing
-Version: 0.2
+Version: 0.3
 Description: Adds a set of social sharing widgets & icons after each post.
 Plugin URI: http://ns99.info/wp-plugins/sharing-social-icon-your-choice.html
 */
@@ -133,7 +133,7 @@ function sharing_icon_options(){
     wp_nonce_field('update-options');
     echo '<input type="hidden" name="page_options" value="'.$sharing_icon_pageoptions.'ss_title,ss_iconsize"><input type="hidden" name="action" value="update" /></form>';
 }
-
+ // add actionand function
 
 add_action('wp_head', 'sharing_icon_css');
 add_filter('the_content', 'sharing_icon');
