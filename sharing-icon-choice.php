@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Share Google , twitter , facebook and social sharing
-Version: 0.4
+Version: 1.0
 Description: Adds a set of social sharing widgets & icons after each post.
 Plugin URI: http://ns99.info/wp-plugins/sharing-social-icon-your-choice.html
 */
@@ -19,25 +19,25 @@ function sharing_icon($content) {
     if (!is_feed() && !is_page() && is_single()) {
         $simplesocialcontent .= '<div class="simplesocial-box">';
 
-        // Title
+
         $simplesocialcontent .= '<div class="simplesocial-title" style="padding-top:10px;margin-bottom:10px;font-size:10pt;font-family:arial;font-weight:bold;">'.get_option('ss_title',' Share this nice post:').'</div>';
 
 
 
-        // New Line
+
         $simplesocialcontent .= '<div style="clear:both"></div>';
 
-        // Facebook Button
+
         if (get_option('ss_facebook','1')) {
             $simplesocialcontent .= '<a class=simplesocial onclick="return simplesocial(this,500,400)" title="Share on Facebook" style="background:url('.$simplesocial_dir.'facebook.png)" href="http://www.facebook.com/share.php?u='.$simplesocial_enclink.'&t='.$simplesocial_title_4url.'"></a>';
         }
 
-        // Twitter Button
+
         if (get_option('ss_twitter','1')) {
             $simplesocialcontent .= '<a class=simplesocial onclick="return simplesocial(this,812,420)" title="Share on Twitter" style="background:url('.$simplesocial_dir.'twitter.png)" href="http://twitter.com/home?status='.$simplesocial_enclink.'"></a>';
         }
 
-        // Email Button
+       
         if (get_option('ss_email','1')) {
             $simplesocialcontent .= '<a class=simplesocial onclick="return simplesocial(this,435,500)" title="Email a Friend" style="background:url('.$simplesocial_dir.'email.png)" href="http://www.freetellafriend.com/tell/?heading=Share+This+Article&bg=1&option=email&url='.$simplesocial_enclink.'"></a>';
         }
